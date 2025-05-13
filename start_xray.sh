@@ -1,0 +1,1 @@
+xray -c xray_config.json

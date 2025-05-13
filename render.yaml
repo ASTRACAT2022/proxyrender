@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: wg-status
+    env: python
+    buildCommand: "pip install fastapi uvicorn jinja2"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port 10000"

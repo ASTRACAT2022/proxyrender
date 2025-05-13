@@ -1,0 +1,44 @@
+{
+  "log": {
+    "loglevel": "info"
+  },
+  "inbounds": [],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.80.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "0f7d02a9-520d-4847-97f0-5a370df25532",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "tets-9po.pages.dev",
+          "alpn": ["http/1.1"],
+          "fingerprint": "firefox"
+        },
+        "wsSettings": {
+          "path": "/2FBVE2z6n8HMTo7V",
+          "headers": {
+            "Host": "tets-9po.pages.dev"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "fragment"
+        }
+      },
+      "tag": "proxy"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+wg-quick up configs/wg0.conf
